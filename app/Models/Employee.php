@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Employee extends Model
 {
-    protected $fillabel = [
+    protected $fillable = [
         'nama_lengkap' , 
         'email' ,
         'nomor_telepon' ,
