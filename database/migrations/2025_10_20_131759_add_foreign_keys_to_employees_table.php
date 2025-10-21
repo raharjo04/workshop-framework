@@ -16,13 +16,14 @@ return new class extends Migration
             $table->unsignedBigInteger('jabatan_id')->after('departemen_id');
 
             $table->foreign('departemen_id')
-                    ->references('id')
-                    ->on('departemens')
-                    ->onDelete('cascade');
+                ->references('id')
+                ->on('departments')
+                ->onDelete('cascade');
 
             $table->foreign('jabatan_id')
-                    ->references('id')  
-                    ->on('positions')   ->onDelete('cascade');
+                ->references('id')
+                ->on('positions')
+                ->onDelete('cascade');
         });
     }
 
